@@ -39,6 +39,7 @@ public interface UserService {
     UserEntity create(NewExternalUserEntity newExternalUserEntity, boolean addDefaultRole);
     UserEntity update(UpdateUserEntity updateUserEntity);
     Page<UserEntity> search(Pageable pageable);
+    List<UserEntity> findAll();
     UserEntity register(NewExternalUserEntity newExternalUserEntity);
     PictureEntity getPicture(String id);
     void delete(String id);
